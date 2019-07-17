@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8" /> 
+<meta name="description" content="Página de prácticas masterD" /> 
+<meta name="robots" content="NOFOLLOW" /> 
+<meta name="Author" content="Vanessa" /> 
+<meta name="keywords" content="Registro" /> 
+<meta name="lang" content="es" /> 
+<meta name="revisit-after" content="2 days" /> 
+<meta name="category" content="Prácticas" />
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="fotos/Milogo.ico">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("#1").click(function(){
+            $.get("index.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#2").click(function(){
+            $.get("Contacto.html", function(data, status){
+                $("#conseguido").html(data);
+               
+            })
+        });
+    
+    
+        $("#3").click(function(){
+             $.get("trabajos.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+   
+    
+        $("#4").click(function(){
+             $.get("Galeria.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#5").click(function(){
+             $.get("registro.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    });
+    
+     
+          function sumar()
+{
+var resultado = 0;
+resultado = ( parseInt(document.getElementById('web').value) + parseInt(document.getElementById('extras').value) + parseInt(document.getElementById('Redes').value) + parseInt(document.getElementById('Aditivos').value)) ;
+porcentaje = document.getElementById('resultado').value = resultado * parseInt(document.getElementById('plazo').value)/100;
+document.getElementById('resultado').value = resultado-porcentaje
+}
+        
+</script>
+</head>
+<body>
+    <main id="conseguido">
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Vanessa Milla Cano</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><button id="1">Indice</button></li>
+                    <li><button id="2">Contacto</button></li>
+                    <li><button id="3">Portfolio</button></li>
+                    <li><button id="4"><b>Presupuesto y Galeria</b></button></li>
+                    <li><button id="5">Registro</button></li>
+                </ul>
+            </nav>
+        
+        <article>
+        
+        <div class='cuadrado-4'>
+        <h1><div><b>GALERIA DE</b></div></h1>
+        <br><br><br>
+        
+        <img src="fotos/ii.gif">
+    </div>
+    
+     <br/><br><br><br><br/><br><br><br>
+
+     <div class="cuadrado3">
+        
+    <div class='cuadrado-3'>
+        <h1>
+            FOTOS
+        </h1>
+    </div>
+    
+</div>
+
+
+<br><br><!--Div que contiene el menú--> 
+    <div class='define'>
+ <!--Div que tiene todo el contenido de la pagina principal-->
+
+    <img class="circular--square" src ="fotos/molon.gif"><br/>
+    <div class="presupuesto"><br>
+    <form name="form1">
+    
+
+    
+     <center>
+    <table class="form2" width="400" border="0" cellspacing="15" cellpadding="2">
+        <tr>
+            <td colspan="3"><center><p style="font-size: 40px"><b>Datos</b></p></center></td>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td colspan="2"><input type="text" style="width: 316px" name="nombre" required=""></td>
+        </tr>
+        <tr>    
+            <td>Apellidos</td>
+            <td colspan="2"><input type="text" style="width: 316px" name="Apellidos" required=""></td>
+        </tr>
+        <tr>
+            <td>Telefono</td>
+            <td colspan="2"><input type="text" style="width: 316px" name="Telefono" required=""></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td colspan="2"><input type="text" style="width: 316px" name="Email" required=""></td>
+        </tr>
+        <tr>
+            <td colspan="3"><center><p style="font-size: 40px"><b>La Web</b></p></center></td>
+        </tr>
+
+        <tr>
+            <td>Tipo de pagina web:</td>
+            <td>
+                <select style="width: 148px" name="web" id="web" onChange="sumar();">
+                    <option value="0">Seleccione</option>   
+                    <option value="300">Pequeña </option>
+                    <option value="500">Mediana</option>
+                    <option value="700">Grande</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Plazo de entrega:</td>
+            <td>
+                <select style="width: 148px" name="plazo" id="plazo" onChange="sumar();">
+                    <option value="0">Seleccione</option>   
+                    <option value="5">1 Mes 5% dto</option>
+                    <option value="10">2 Meses 10% dto</option>
+                    <option value="15">3 Meses 15% dto</option>
+                    <option value="20">4 Meses 20% dto</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Extras: </td>
+        </tr>
+        <tr>
+            <td>
+                <select style="width: 148px" id="extras" onchange="sumar();">
+                    <option value="0">Secciones</option>
+                    <option value="400">Quienes somos</option>
+                    <option value="400">Donde estamos</option>
+                    <option value="400">Galeria de fotos</option>
+                    <option value="800">Quenes somos y Donde estamos</option>
+                    <option value="800">Quienes somos y Galeria</option>
+                    <option value="800">Donde estamos y Galeria</option>
+                    <option value="1200">Todas</option>
+                </select>
+            </td>
+            <td>
+                <select style="width: 148px" id="Redes" onchange="sumar();">
+                    <option value="0">Redes Sociales</option>
+                    <option value="400">Instagram</option>
+                    <option value="400">Facebook</option>
+                    <option value="400">Twitter</option>
+                    <option value="800">Instagram y Facebook</option>
+                    <option value="800">Instagram y Twitter</option>
+                    <option value="800">Facebook y Twitter</option>
+                    <option value="1200">Todas</option>
+                </select>
+            </td>
+            <td>
+                <select style="width: 148px" id="Aditivos" onchange="sumar();">
+                    <option value="0">Adicional</option>
+                    <option value="400">eComerce</option>
+                    <option value="400">Gestion interna</option>
+                    <option value="400">Noticias</option>
+                    <option value="800">eComerce y Gestion interna</option>
+                    <option value="800">eComerce y Noticias</option>
+                    <option value="800">Gestion interna y Noticias</option>
+                    <option value="1200">Todas</option>
+                </select>
+            </td>
+                
+
+
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="3"><center><p style="font-size: 40px"><b>Presupuesto estimado</b></p></center></td></tr>
+            <tr>
+            <td colspan="3"><p style="font-size: 24px"><input name="resultado" readonly="readonly" placeholder="(Precio en euros)" style=" border: 2px; font-size: 24px; text-align: right; background-color: black; color: white;" type="text" id="resultado">€</p></td>
+        </tr>
+        <tr><td colspan="3"><center><p style="font-size: 20px">(Recuerde que este presupuesto es estimado, los precios pueden variar dependiendo del tipo de pagina)</p></center></td></tr>
+
+</table>
+  
+
+</center>
+</form>
+</div>
+
+
+  <center>
+    <img src="fotos/sitiowebvanessa.png" width="650px" height="420px">
+</center><br/>
+  <center>
+    <img src="fotos/Los lobos y sus curiosidades.PNG" width="365px" height="340px">&nbsp;&nbsp;&nbsp;
+    <img src="fotos/Milogo.jpg" width="365px" height="340px">
+</center><br/>
+  <center>
+    <img src="fotos/yo.jpg" width="250px" height="240px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="fotos/esta.JPG" width="250px" height="240px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="fotos/IMG_4801.JPG" width="250px" height="240"/>
+</center><br/><br/>
+
+<br/><center>
+<div class="cuadrado">
+    <img src="fotos/ww.gif" width="80px"height="80px"/>
+    <p>Las imágenes que estan aqui<br/> 
+        son imagenes de páginas webs,realizacion de logos<br/> 
+    y proyectos de páginas</p></div></center>
+</div>
+</div>
+<footer> 
+        <div class="galeria"  style="background-color: black; bottom: 0;" ><p>::Página creada por:: Vanessa Milla Cano::</p></div>
+        </footer>
+
+
+
+
+
+
+
+
+    </main>       
+        
+    
+</body>
+</html>

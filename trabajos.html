@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8" /> 
+<meta name="description" content="Página de prácticas masterD" /> 
+<meta name="robots" content="NOFOLLOW" /> 
+<meta name="Author" content="Vanessa" /> 
+<meta name="keywords" content="Registro" /> 
+<meta name="lang" content="es" /> 
+<meta name="revisit-after" content="2 days" /> 
+<meta name="category" content="Prácticas" />
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="fotos/Milogo.ico">
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("#1").click(function(){
+            $.get("index.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#2").click(function(){
+            $.get("Contacto.html", function(data, status){
+                $("#conseguido").html(data);
+               
+            })
+        });
+    
+    
+        $("#3").click(function(){
+             $.get("trabajos.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+   
+    
+        $("#4").click(function(){
+             $.get("Galeria.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#5").click(function(){
+             $.get("registro.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    });
+    
+     
+     
+        
+</script>
+    
+</head>
+<body>
+    <main id="conseguido">
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Vanessa Milla Cano</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><button id="1">Indice</button></li>
+                    <li><button id="2">Contacto</button></li>
+                    <li><button id="3"><b>Portfolio</b></button></li>
+                    <li><button id="4">Presupuesto y Galeria</button></li>
+                    <li><button id="5">Registro</button></li>
+                </ul>
+            </nav>
+            
+            <article>
+                
+                    <h1 class="portfolio1">
+                        <div class="sombrilla2"> <b>PORTFOLIO DE TRABAJOS REALIZADOS</b>
+                        </div>
+                    </h1>
+
+                    <br><br>
+                <div class="lax">
+                
+                    <img src="fotos/ee.gif">
+                
+                </div>
+                <br><br>
+    <section class="galeria2">
+        <div class="contenedor2">
+            <article class="galeria__columna">
+                <a href="fotos/yo.jpg" data-lightbox="mygallery" data-title="Captura mia programando mi proyecto final el cual veis en pantalla"><img src="fotos/yo.jpg"></a>
+        
+            </article>
+            <article class="galeria__columna">
+                <a href="fotos/capturaenlace1.png" data-lightbox="mygallery" data-title="En esta captura podemos ver los comienzos de mi anterior proyecto relacionado con los lobos"><img src="fotos/capturaenlace1.png"></a>
+        
+            </article> 
+    
+            <article class="galeria__columna">
+                <a href="fotos/capturaformulario.png" data-lightbox="mygallery" data-title="Este fue uno de mis comienzos en la realizacion de formularios."><img src="fotos/capturaformulario.png"></a>
+        
+            </article>
+            <article class="galeria__columna">
+                <a href="fotos/capturanoticias.png" data-lightbox="mygallery" data-title="En esta captura se observa la seccion de noticias sobre lobos de mi proyecto anterior."><img src="fotos/capturanoticias.png"></a>
+        
+            </article>
+    
+        </div>
+    </secition>
+
+            </article>
+
+
+            
+        </div>
+            <footer class="portfolio"> 
+                <div>
+                    <i>::Creado por:Vanessa Milla Cano:: ::Eso es todo amigos::
+                    </i>
+                </div>
+            </footer> 
+
+        
+    </main>
+</body>
+</html>

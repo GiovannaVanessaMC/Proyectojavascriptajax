@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8" /> 
+<meta name="description" content="Página de prácticas masterD" /> 
+<meta name="robots" content="NOFOLLOW" /> 
+<meta name="Author" content="Vanessa" /> 
+<meta name="keywords" content="Proyecto" /> 
+<meta name="lang" content="es" /> 
+<meta name="revisit-after" content="2 days" /> 
+<meta name="category" content="Prácticas" />
+    <meta charset="UTF-8">
+    <title>Proyecto final de Vanessa Milla Cano</title>
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="fotos/Milogo.ico">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+<script type="text/javascript">
+function cargar(){
+    var objHttp=null;
+    if(window.XMLHttpRequest) {
+        objHttp = new XMLHttpRequest();
+    } else if(window.ActiveXObject) {
+        objHttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    objHttp.open("GET", "XML/portada.xml", true);
+    objHttp.onreadystatechange = function() {
+        if (objHttp.readyState==4) {                            
+            var documento = objHttp.responseXML; 
+            var noticias = documento.documentElement;
+            var cadena = "";    
+            for (i = 0;i < 3; i++){             
+                cadena = cadena + "<b>Titular:</b> " + noticias.getElementsByTagName("item")[i].childNodes[1].firstChild.nodeValue + "<br/>";   
+                cadena = cadena + "<b>Descripcion:</b> " + noticias.getElementsByTagName("item")[i].childNodes[9].firstChild.nodeValue + "<br/>";
+                cadena = cadena + "<b>Enlace:</b> <a href='" + noticias.getElementsByTagName("item")[i].childNodes[5].firstChild.nodeValue + "' target='_blank'>" + 
+                noticias.getElementsByTagName("link")[i].childNodes[0].nodeValue + "</a><br/><br/>";
+            }
+            document.getElementById("cajon").innerHTML = cadena;
+            } 
+    }
+    objHttp.send(null);
+} 
+     
+
+    $(document).ready(function(){
+        $("#1").click(function(){
+            $.get("index.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#2").click(function(){
+            $.get("Contacto.html", function(data, status){
+                $("#conseguido").html(data);
+               
+            })
+        });
+    
+    
+        $("#3").click(function(){
+             $.get("trabajos.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+   
+    
+        $("#4").click(function(){
+             $.get("Galeria.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#5").click(function(){
+             $.get("registro.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    });
+    
+      var myVar;
+        function myFunction(){
+            myVar = setTimeout(alertFunc,5000);
+        }
+        function alertFunc(){
+            alert("Hola,Bienvenidos a mi página web!");
+        }
+</script>     
+</head>
+<body onLoad="myFunction()";>
+    <main id="conseguido">
+    <div class="rss" id="cajon">    
+        Cargando Rss...
+    </div>  
+        <script type="text/javascript">cargar();</script> 
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Vanessa Milla Cano</h2>
+           
+            
+            <nav class="menu">
+                <ul>
+                    <li><button id="1"><b>Indice</b></button></li>
+                    <li><button id="2">Contacto</button></li>
+                    <li><button id="3">Portfolio</button></li>
+                    <li><button id="4">Presupuesto y Galeria</button></li>
+                    <li><button id="5">Registro</button></li>
+                </ul>
+            </nav>
+               
+            <article>
+            <div class="principio">
+                <div><br/><br/>
+                    <div class="sombras">
+                        <div class="letras">
+                            <h1>
+                                <img src="fotos/portatilmolon.png">< VANESSA <br/>MILLA CANO / >
+                                <h3 class="programa">PROGRAMACIÓN WEB</h3>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <br/>
+             <br><br>
+            <div class="circulito">
+                <img class="circular--square" src ="fotos/fotovanessa.jpg">
+            </div>
+            <br/><br/>
+            <div class="trozo-blanco">
+            <br/><br/>
+                    
+                <p><i>"Pide y recibirás. Busca y encontrarás,
+                    <br/>llama y se te abriran las puertas"</i></p>
+                    
+            <br/><br/><br/><br/>  
+                <p class="matt">Matt Artson</p>     
+            </div>
+
+        
+                <div>
+                <table class="tablacircular">
+                    <tr>
+                        <td><img class="circular" img src="fotos/html.png"></td>
+                        <td><img class="circular" img src="fotos/css.png"></td>
+                    </tr>
+                </table>
+                </div>
+            
+
+            <div class="trozo-transparente">
+                <center>
+                    <h1 >
+                        <div class="sombrilla">
+                            <i>BIENVENIDOS</i>
+                        </div>
+                    </h1>
+                </center>    
+            </div>  
+
+            <div class="logo">
+                <img class="milogo" src="fotos/Milogo.JPG"">
+            </div>      
+            <br/>
+            
+            <span class="textillo">
+                <p>Con 21 años, iniciándome en programación web. Tengo mucha ilusión y ganas de crear y realizar cosas nuevas, enfocadas en el presente y futuro. Mi sueño es crear e innovar grandes proyectos y pienso realizarlo cueste lo que me cueste.
+                </p>
+            
+                <p class="doradillo">
+                    <i>Gracias por depositar confianza en mi
+                    </i>
+                </p>
+                </span>
+            <br/>
+           
+                <div class="politica">
+                    <p> Acepto  La Politica de Privacidad
+                    </p>
+                <input type="checkbox" name="privacidad" id="privacidad">
+                <a href="http://espacioseguro.com/jmjjaen/politicadeprivacidad.php" target="_blank">
+                    <p>Politica de Privacidad
+                    </p>
+                </a></div>
+            
+            <br>
+
+            <div class="audio">
+
+            
+                <audio controls="controls" preload="preload" autoplay="autoplay" loop="true">
+                <source src="musica/cancion.mp3" type="audio/mp3">
+                </audio>
+            
+        </div>
+            </article>
+            </div>
+            <footer> 
+                <div class="fin">
+                    <i>::Creado por:Vanessa Milla Cano:: ::Eso es todo amigos::
+                    </i>
+                </div>
+            </footer> 
+        
+    </main>
+</body>
+</html>

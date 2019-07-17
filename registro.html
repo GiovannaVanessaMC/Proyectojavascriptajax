@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta charset="UTF-8" /> 
+<meta name="description" content="Página de prácticas masterD" /> 
+<meta name="robots" content="NOFOLLOW" /> 
+<meta name="Author" content="Vanessa" /> 
+<meta name="keywords" content="Registro" /> 
+<meta name="lang" content="es" /> 
+<meta name="revisit-after" content="2 days" /> 
+<meta name="category" content="Prácticas" />
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="icon/css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="fotos/Milogo.ico">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function(){
+        $("#1").click(function(){
+            $.get("index.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#2").click(function(){
+            $.get("Contacto.html", function(data, status){
+                $("#conseguido").html(data);
+               
+            })
+        });
+    
+    
+        $("#3").click(function(){
+             $.get("trabajos.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+   
+    
+        $("#4").click(function(){
+             $.get("Galeria.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    
+    
+        $("#5").click(function(){
+             $.get("registro.html", function(data, status){
+                $("#conseguido").html(data);
+                
+            })
+        });
+    });
+    
+     
+     
+        
+</script>
+</head>
+<body>
+    <main id="conseguido">
+        <div class="content-all">
+            <header></header>
+            <input type="checkbox" id="check">
+            <label for="check" class="icon-menu">Menu</label>
+            <h2>Vanessa Milla Cano</h2>
+            
+            
+            <nav class="menu">
+                <ul>
+                    <li><button id="1">Indice</button></li>
+                    <li><button id="2">Contacto</button></li>
+                    <li><button id="3">Portfolio</button></li>
+                    <li><button id="4">Presupuesto y Galeria</button></li>
+                    <li><button id="5"><b>Registro</b></button></li>
+                </ul>
+            </nav>
+            
+            <article>
+                <h1 class="registro">REGISTRO</h1>
+                <h3 class="registro2"><b>Formulario de inscripción</b></h3>
+                <br><br>
+            <img class="estudio" src="fotos/estudio.jpg"/><br>
+ 
+
+
+    <div class="registro3"><br>
+        <form>
+    <h3><i>Rellena los siguientes campos</i></h3><br/>
+
+
+
+<p>NOMBRE : </p>
+<input type="text" name="nombre"  class="caja_gris" maxlength="50" size="40" id="NOMBRE" value="" placeholder="Nombre    (requerido)" required /> 
+<br/><br/>
+<p>DIRECCIÓN: </p>
+<input type="text" name="direccion" class="caja_gris" maxlength="50" size="40" id="DIRECCION" value="" placeholder="Dirección   (requerido)" required /> 
+<br/><br/>
+<p>TELEFONO DE CONTACTO: </p>
+<input type="text" name="telefono de contacto" class="caja_gris" maxlength="50" size="40" id="TELEFONO" value="" placeholder="Telefono    (requerido)" required />
+<br/><br/>
+<p>EDAD: </p>
+<input type="text" name="edad" class="caja_gris" maxlength="50" size="40" id="EDAD" value="" placeholder="Edad    (requerido)" required /> 
+<br/><br/>
+<p>E-MAIL: </p>
+<input type="text" name="email" class="caja_gris" maxlength="50" size="40" id="EMAIL" value="" placeholder="Direccion@correo.com    (requerido)" required /> 
+<br/><br/><br>
+<div class="politica2">
+    <p>
+        <input type="checkbox" id="cbox1" value="first_checkbox" required="">Aceptar Politica de Privacidad
+    </p>
+</div>
+<br>
+<div class="politica3">
+    <h3>
+        <a href="http://espacioseguro.com/jmjjaen/politicadeprivacidad.php">Politica de Privacidad</h3>
+        </a>
+</div>
+    <br/>
+<input type="submit" name="Boton de enviar" value="ENVIAR FORMULARIO"> 
+<input type="reset" name="Boton de borrado" value="BORRAR FORMULARIO">
+<br/><br/> 
+</form>
+</div>
+
+               
+            </article>
+            </div>
+            <footer> 
+<div style="text-align: center">
+        <i>::Eso es todo amigos::Realizado por :-Vanessa Milla Cano-::</i>
+        </div>
+        </footer> 
+        
+    </main>
+</body>
+</html>
